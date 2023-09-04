@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-img src="assets/logoduoc.png" alt="Duoc Logo" style="width: 60px; height: 50px;"></ion-img>
+    </ion-buttons>
+    <ion-title>Soporte</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Soporte</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-card>
+    <ion-card-header color="primary">
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form #formulario="ngForm" (keyup.enter)="Enviar()">
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Nombre: </ion-label>
+            <ion-input type="text" placeholder="Digite su nombre.." 
+                      name="nombre" [(ngModel)]="usuario.nombre"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Email: </ion-label>
+            <ion-input type="email" placeholder="Digite su email.."
+                      name="email" [(ngModel)]="usuario.email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Edad: </ion-label>
+            <ion-input type="number" placeholder="Digite su edad.."
+                      name="edad" [(ngModel)]="usuario.edad"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Comentenos la informacion detalladamente </ion-label>
+            <ion-input type="soporte" placeholder="Agrega informacion en el casillero."
+                     name="soporte" [(ngModel)]="usuario.soporte"></ion-input>
+          </ion-item>
+        </ion-list>
+        <ion-button (click)="Enviar()" expand="block" fill="solid" color="primary" shape="round">
+          Enviar
+        </ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+ 
+</ion-content>

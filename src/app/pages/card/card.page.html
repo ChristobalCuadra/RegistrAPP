@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-img src="assets/logoduoc.png" alt="Duoc Logo" style="width: 60px; height: 50px;"></ion-img>
+    </ion-buttons>
+    <ion-title>Conocenos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" >
+    <ion-toolbar>
+      <ion-title size="large">RegistrAPP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Conocenos A Fondo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="texto">
+      Somos una Organizacion que se junto para crear una aplicacion como lo es RegistAPP, que su funcion principalmente es ayudar y facilitar a los docentes con el registro
+      de asistencia a clases de sus alumnos, consiste en generar un codigo qr mediante la aplicacion lo cual les aparecera en la pantalla a los alumnos por lo que ellos escaneandolo automaticamente quedaran presente en la lista de clases. 
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="contenido">
+    <img src="assets/muestra.jpg" class="ion-padding">
+    <ion-card-header>
+      <ion-card-subtitle color="light">Version 1.0</ion-card-subtitle>
+      <br>
+      <ion-card-title class="titulo" color="light">RegistrAPP</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="texto-blanco">
+      <p>
+        La imagen mostrada anteriormente es una muestra de el inicio de nuestra aplicación, como se mencionó esta es la versión 1.0, la primera versión pero no te preocupes estamos en constante trabajo para poder mejorarla y hacerla más agradable para cada usuario que la utiliza.
+      </p>
+    </ion-card-content>
+    

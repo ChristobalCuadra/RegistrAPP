@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="light">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Asistencia</ion-title>
+    <ion-buttons slot="end">
+      <ion-img src="assets/duoclogo.png" alt="Duoc Logo" style="width: 60px; height: 50px;"></ion-img>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="ion-no-padding">
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <ion-col size="auto">
+        <!-- Coloca tu imagen aquí -->
+        <img src="assets/qr.png" alt="Imagen" />
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <ion-col size="auto">
+        <!-- Coloca tu botón aquí -->
+        <ion-button expand="block" shape="round" (click)="mostrarqr()">
+          Mostrar QR a Alumnos
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-buttons slot="end"> <!-- Cambiamos "start" a "end" para la esquina derecha -->
+        <ion-button (click)="cerrarSesion()" expand="block" color="secondary">Cerrar Sesión</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
+  
+
+</ion-content>
